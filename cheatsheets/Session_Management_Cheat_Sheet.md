@@ -238,7 +238,7 @@ There are two types of session management mechanisms for web applications, permi
 
 The session tokens should be handled by the web server if possible or generated via a cryptographically secure random number generator.
 
-Although the most common mechanism in use today is the strict one (more secure, [PHP defaults to permissive](https://wiki.php.net/rfc/session-use-strict-mode)). Developers must ensure that the web application does not use a permissive mechanism under certain circumstances. Web applications should never accept a session ID they have never generated, and in case of receiving one, they should generate and offer the user a new valid session ID. Additionally, this scenario should be detected as a suspicious activity and an alert should be generated.
+Although the most common mechanism in use today is the strict one (more secure), [PHP defaults to permissive](https://wiki.php.net/rfc/session-use-strict-mode). Developers must ensure that the web application does not use a permissive mechanism under certain circumstances. Web applications should never accept a session ID they have never generated, and in case of receiving one, they should generate and offer the user a new valid session ID. Additionally, this scenario should be detected as a suspicious activity and an alert should be generated.
 
 ### Manage Session ID as Any Other User Input
 
